@@ -1,2 +1,4 @@
 import Header from "./header";
-export { Header };
+
+import SearchProduct from "./product/search";
+export { Header, SearchProduct };

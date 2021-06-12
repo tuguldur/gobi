@@ -1,0 +1,44 @@
+.product-sm {
+  display: flex;
+  img.product-image {
+    border-radius: 4px;
+    height: 100px;
+    width: 64px;
+    margin-right: 8px;
+  }
+  .product-body {
+    padding: 33px 0;
+    font-family: Lato;
+    font-weight: normal;
+    line-height: 17px;
+    a {
+      &:hover {
+        .name {
+          text-decoration: underline;
+        }
+      }
+    }
+    .name {
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 13px;
+      white-space: pre;
+    }
+    .price-wrapper {
+      &.has-discount {
+        .price {
+          text-decoration-line: line-through;
+        }
+      }
+      span {
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 13px;
+        margin-right: 6px;
+      }
+      .discount {
+        color: #a62c0d;
+      }
+    }
+  }
+}

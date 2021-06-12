@@ -147,7 +147,13 @@
         img.search-logo {
           margin-right: 15px;
         }
+
         .search-input {
+          &.has_drop {
+            input[type="search"] {
+              border-radius: 8px 8px 0 0;
+            }
+          }
           position: relative;
           display: flex;
           align-items: center;
@@ -173,6 +179,65 @@
             right: 10px;
             img {
               display: block;
+            }
+          }
+          .search-drop {
+            background: #f5f5fa;
+            position: absolute;
+            border-radius: 0 0 4px 4px;
+            top: 44px;
+            right: 0;
+            width: max-content;
+
+            .drop-header {
+              padding: 0 20px;
+              color: #505050;
+              font-family: "Lato", sans-serif;
+              font-weight: 400;
+              font-size: 12px;
+              height: 32px;
+              line-height: 32px;
+            }
+            .drop-body {
+              display: flex;
+              flex-direction: row;
+              .items {
+                flex: 1 1;
+                background: #fff;
+                display: grid;
+                gap: 15px;
+                padding: 10px 50px;
+                grid-template-columns: repeat(2, 1fr);
+              }
+              .category {
+                width: 260px;
+                .category-item {
+                  height: 36px;
+                  padding: 0 10px;
+                  line-height: 36px;
+                  a {
+                    font-size: 13px;
+                    font-family: "Lato", sans-serif;
+                    font-weight: 400;
+                    color: #000;
+                  }
+                }
+              }
+              .drop-footer {
+                a {
+                  span {
+                    font-size: 13px;
+                    font-family: "Lato", sans-serif;
+                    font-weight: 400;
+                    color: #000;
+                  }
+                  img {
+                    display: inline;
+                    margin-left: 10px;
+                    vertical-align: middle;
+                  }
+                }
+              }
             }
           }
         }
