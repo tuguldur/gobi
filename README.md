@@ -6,9 +6,9 @@
 
 2. group - 1
 
-- [ ] laptop
-- [ ] tablet
-- [ ] mobile
+- [x] laptop
+- [x] tablet
+- [x] mobile
 
 3. group - 2
 

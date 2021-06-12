@@ -1,4 +1,5 @@
 import Header from "./header";
 
 import SearchProduct from "./product/search";
-export { Header, SearchProduct };
+import Button from "./button";
+export { Header, SearchProduct, Button };

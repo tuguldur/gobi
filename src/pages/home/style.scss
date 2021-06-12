@@ -1,0 +1,54 @@
+.home {
+  .group-1 {
+    background-image: url("../../assets/image/group-1.png");
+    height: 100vh;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    .group-bar {
+      flex: 1;
+    }
+    .sale-wrapper {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .sale-button {
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      background-position-x: -300px;
+      flex-direction: column;
+      .sale-wrapper {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.8) 0%,
+          rgba(238, 243, 255, 0.8) 100%
+        );
+        .big {
+          display: none;
+        }
+        .small {
+          display: block;
+        }
+        backdrop-filter: blur(50px);
+        border-radius: 9px;
+        margin: 10px;
+        .sale-button {
+          background: #272727;
+          color: #ffffff;
+        }
+      }
+    }
+    .small {
+      display: none;
+    }
+  }
+}

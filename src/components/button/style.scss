@@ -1,0 +1,14 @@
+button.button {
+  border-radius: 10px;
+  background: #fff;
+  padding: 12px 25px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Roboto;
+  &:hover {
+    background: rgba($color: #fff, $alpha: 0.9);
+  }
+}
