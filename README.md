@@ -30,15 +30,15 @@
 
 6. about us
 
-- [ ] laptop
-- [ ] tablet
-- [ ] mobile
+- [x] laptop
+- [x] tablet
+- [x] mobile
 
 7. subscribe
 
-- [ ] laptop
-- [ ] tablet
-- [ ] mobile
+- [x] laptop
+- [x] tablet
+- [x] mobile
 
 8. footer
 

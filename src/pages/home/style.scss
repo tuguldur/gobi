@@ -125,6 +125,7 @@
       flex-grow: 1;
       max-width: 100%;
       flex-basis: 0;
+      display: flex;
       img {
         max-width: 100%;
       }
@@ -172,9 +173,58 @@
         max-width: 100%;
         text-align: center;
         padding: 20px 10px;
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 12px;
+        }
         .about-us-picture {
           display: none;
         }
+      }
+    }
+  }
+  .subscribe {
+    padding: 25px 10px;
+    background: #e5e5e5;
+    text-align: center;
+    font-family: Lato;
+
+    h1 {
+      font-weight: 800;
+      font-size: 36px;
+      color: #4f5255;
+    }
+    p {
+      font-weight: normal;
+      color: #4f5255;
+      font-size: 12px;
+    }
+    form {
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+      button {
+        margin-left: -10px;
+      }
+      input {
+        background: #f5f7f6;
+        border-radius: 10px 0 0 10px;
+        border: none;
+        padding: 13px;
+        width: calc(100% - 120px);
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 9px;
       }
     }
   }

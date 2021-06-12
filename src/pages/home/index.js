@@ -209,6 +209,23 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="subscribe">
+        <h1>Subscribe</h1>
+        <p>
+          Sign up for emails and receive early access to new arrivals, sales,
+          events + more.
+        </p>
+        <form action="/subscribe" method="POST">
+          <input type="email" placeholder="Enter your email address" />
+          <Button type="secondary">Submit</Button>
+          <p>
+            By signing up, you will receive Gobi Cashmere offers, promotions and
+            other commercial messages. You are also agreeing to Gobi Cashmere's{" "}
+            <Link to="/privacy">Privacy Policy</Link>. You may unsubscribe at
+            any time.
+          </p>
+        </form>
+      </div>
     </div>
   );
 };
