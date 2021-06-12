@@ -171,6 +171,44 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <div className="about-us">
+        <div className="image-wrapper">
+          <img
+            src={require("assets/image/about-us.png").default}
+            alt="about-us"
+          />
+        </div>
+        <div className="us">
+          <div>
+            <h1>ABOUT US</h1>
+            <p>
+              Aute et officia anim consectetur consequat velit minim irure Lorem
+              ad. Officia nisi sunt est eiusmod occaecat excepteur velit
+              reprehenderit occaecat cillum anim ad magna aliqua. Sint enim
+              Lorem amet in tempor non ea duis cillum. Cillum consectetur in in
+              aliqua. Nostrud minim duis cupidatat et ea sint. Aute et officia
+              anim consectetur consequat velit minim irure Lorem ad. Officia
+              nisi sunt est eiusmod occaecat excepteur velit reprehenderit
+              occaecat cillum anim ad magna aliqua. Sint enim Lorem amet in
+              tempor non ea duis cillum. Cillum consectetur in in aliqua.
+              Nostrud minim duis cupidatat et ea sint.
+            </p>
+            <Link to="/about-us">
+              <Button type="secondary">READ MORE</Button>
+            </Link>
+          </div>
+          <div className="about-us-picture">
+            <img
+              src={require("assets/image/about-us-item.png").default}
+              alt="about-us"
+            />
+            <img
+              src={require("assets/image/about-us-item.png").default}
+              alt="about-us"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
