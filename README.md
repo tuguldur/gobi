@@ -12,15 +12,15 @@
 
 3. group - 2
 
-- [ ] laptop
-- [ ] tablet
-- [ ] mobile
+- [x] laptop
+- [x] tablet
+- [x] mobile
 
 4. group - 3
 
-- [ ] laptop
-- [ ] tablet
-- [ ] mobile
+- [x] laptop
+- [x] tablet
+- [x] mobile
 
 5. items
 

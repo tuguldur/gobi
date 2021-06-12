@@ -1,8 +1,52 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "components";
+import { Button, Collection } from "components";
 import "./style.scss";
 const Home = () => {
+  const collections = [
+    {
+      id: 1,
+      title: "Women",
+      items: [
+        {
+          id: 1,
+          name: "Cardigans",
+          image: require("assets/image/collections-women-1.png").default,
+        },
+        {
+          id: 2,
+          name: "Cardigans",
+          image: require("assets/image/collections-women-2.png").default,
+        },
+        {
+          id: 3,
+          name: "Cardigans",
+          image: require("assets/image/collections-women-1.png").default,
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: "MEN",
+      items: [
+        {
+          id: 1,
+          name: "Cardigans",
+          image: require("assets/image/collections-men-1.png").default,
+        },
+        {
+          id: 2,
+          name: "Cardigans",
+          image: require("assets/image/collections-men-2.png").default,
+        },
+        {
+          id: 3,
+          name: "Cardigans",
+          image: require("assets/image/collections-men-1.png").default,
+        },
+      ],
+    },
+  ];
   return (
     <div className="home">
       <div className="group-1">
@@ -42,6 +86,9 @@ const Home = () => {
           />
         </div>
       </div>
+      {collections.map((collection) => (
+        <Collection key={collection.id} {...collection} />
+      ))}
     </div>
   );
 };
