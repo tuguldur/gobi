@@ -1,4 +1,7 @@
 .home {
+  .group-row {
+    flex: 1;
+  }
   .group-1 {
     background-image: url("../../assets/image/group-1.png");
     height: 100vh;
@@ -10,9 +13,6 @@
     flex-direction: row;
     position: relative;
 
-    .group-bar {
-      flex: 1;
-    }
     .sale-wrapper {
       display: flex;
       height: 100%;
@@ -49,6 +49,43 @@
     }
     .small {
       display: none;
+    }
+  }
+  .group-2 {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 768px) {
+      background: linear-gradient(0deg, #f7f8fb, #f7f8fb), #fdf4ed;
+      flex-direction: column-reverse;
+      padding: 50px 10px;
+      .group-2-wrapper {
+        text-align: center;
+      }
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    .group-2-wrapper {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-family: Lato;
+        font-weight: bold;
+        font-size: 46px;
+        margin-bottom: 22px;
+      }
+      p {
+        color: #636363;
+        font-family: Roboto;
+        font-size: 22px;
+      }
+      button {
+        margin-top: 22px;
+      }
     }
   }
 }

@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <div className="home">
       <div className="group-1">
-        <div className="group-bar"></div>
-        <div className="group-bar">
+        <div className="group-row"></div>
+        <div className="group-row">
           <div className="sale-wrapper">
             <img
               src={require("assets/image/group-sale.png").default}
@@ -23,6 +23,23 @@ const Home = () => {
               <Button className="sale-button">Shop now</Button>
             </Link>
           </div>
+        </div>
+      </div>
+      <div className="group-2">
+        <div className="group-row">
+          <div className="group-2-wrapper">
+            <h1>WINTER SPICE 2020</h1>
+            <p>Infusion of summer pieces and cashmere silk blends.</p>
+            <Link to="/shop">
+              <Button type="secondary">Shop now</Button>
+            </Link>
+          </div>
+        </div>
+        <div className="group-row">
+          <img
+            src={require("assets/image/group-2.png").default}
+            alt="group-2"
+          />
         </div>
       </div>
     </div>
