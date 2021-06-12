@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button, Collection } from "components";
+import { Button, Collection, Product } from "components";
 import "./style.scss";
 const Home = () => {
   const collections = [
@@ -47,6 +47,80 @@ const Home = () => {
       ],
     },
   ];
+  const products = [
+    {
+      id: 1,
+      name: "Zweiseitiger Wendemantel Mit Schmetterlingsxzds",
+      description: "+6 colors",
+      price: 299,
+      discount: 220,
+      status: "new",
+      image: require("assets/image/product-sample01.png").default,
+    },
+    {
+      id: 2,
+      name: "Écharpe tisée avec bords contrastants et franges",
+      description: "",
+      price: 299,
+      discount: 220,
+      status: null,
+      image: require("assets/image/product-sample02.png").default,
+    },
+    {
+      id: 3,
+      name: "Трикотажный Супер Мягкий Плед Контрастного Оттенка",
+      description: "+6 colors",
+      price: 299,
+      discount: 0,
+      status: null,
+      image: require("assets/image/product-sample03.png").default,
+    },
+    {
+      id: 4,
+      name: "Кардиган в Стиле Колор-Блок с V-Образным Воротником",
+      description: "+6 colors",
+      price: 299,
+      discount: 220,
+      status: null,
+      image: require("assets/image/product-sample04.png").default,
+    },
+    {
+      id: 5,
+      name: "Zweiseitiger Wendemantel Mit Schmetterlingsxzds",
+      description: "+6 colors",
+      price: 299,
+      discount: 220,
+      status: null,
+      image: require("assets/image/product-sample05.png").default,
+    },
+    {
+      id: 6,
+      name: "Écharpe tisée avec bords contrastants et franges",
+      description: "",
+      price: 299,
+      discount: 220,
+      status: null,
+      image: require("assets/image/product-sample06.png").default,
+    },
+    {
+      id: 7,
+      name: "Трикотажный Супер Мягкий Плед Контрастного Оттенка",
+      description: "+6 colors",
+      price: 299,
+      discount: 220,
+      status: null,
+      image: require("assets/image/product-sample07.png").default,
+    },
+    {
+      id: 8,
+      name: "Кардиган в Стиле Колор-Блок с V-Образным Воротником",
+      description: "+6 colors",
+      price: 299,
+      discount: 220,
+      status: null,
+      image: require("assets/image/product-sample08.png").default,
+    },
+  ];
   return (
     <div className="home">
       <div className="group-1">
@@ -89,6 +163,14 @@ const Home = () => {
       {collections.map((collection) => (
         <Collection key={collection.id} {...collection} />
       ))}
+      <div className="products">
+        <h1>TO GET and TO GIFT </h1>
+        <div className="product-wrapper">
+          {products.map((product) => (
+            <Product key={product.id} {...product} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

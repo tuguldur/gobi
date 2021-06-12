@@ -24,9 +24,9 @@
 
 5. items
 
-- [ ] laptop
-- [ ] tablet
-- [ ] mobile
+- [x] laptop
+- [x] tablet
+- [x] mobile
 
 6. about us
 
