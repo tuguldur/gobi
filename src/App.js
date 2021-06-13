@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 // pages
 import { Home } from "pages";
 // components
-import { Header } from "components";
+import { Header, Footer } from "components";
 const App = () => {
   return (
     <BrowserRouter>
@@ -11,6 +11,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 };

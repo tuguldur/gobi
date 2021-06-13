@@ -4,4 +4,5 @@ import SearchProduct from "./product/search";
 import Product from "./product/index";
 import Button from "./button";
 import Collection from "./collection";
-export { Header, SearchProduct, Button, Collection, Product };
+import Footer from "./footer";
+export { Header, SearchProduct, Button, Collection, Product, Footer };
